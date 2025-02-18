@@ -122,6 +122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multiplier: 0
+  plusOne: {fileID: 3724086209919679772, guid: 8dc5b66c719776847be9330fad5b89f2, type: 3}
+  menu: {fileID: 0}
 --- !u!50 &4777079605024856615
 Rigidbody2D:
   serializedVersion: 4

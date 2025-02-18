@@ -15,13 +15,13 @@ public class BGSlider : MonoBehaviour
     
     void Update()
     {
-        bg.value = player.GetComponent<Snapdragon>().mapPos;
+        bg.value = player.GetComponent<Snapdragon>().mapPos; //moves the background on a slider for some layered movement
 
-        if ((bg.value > 0) && (bg.value < 1))
+        if ((bg.value > 0) && (bg.value < 1)) //moves the camera only if the player is within the range of the slider so it doesn't go out of bounds
         {
             Vector3 temp = transform.position;
 
-            temp.x = player.transform.position.x;
+            temp.x = player.transform.position.x; //copies the player's x value
 
             transform.position = temp;
         }
