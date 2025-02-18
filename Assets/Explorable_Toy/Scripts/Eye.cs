@@ -37,7 +37,7 @@ public class Eye : MonoBehaviour
             transform.localScale *= flip; //flips em when they reach either bound
         }
 
-        temp.x += multiplier * speed * 0.005f; //calculates their movement
+        temp.x += multiplier * speed * 0.0025f; //calculates their movement
 
         transform.position = temp; //sets the position
         

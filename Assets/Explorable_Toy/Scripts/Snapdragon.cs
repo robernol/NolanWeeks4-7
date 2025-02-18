@@ -55,16 +55,16 @@ public class Snapdragon : MonoBehaviour
 
         if ((Input.GetKey(KeyCode.A) && (transform.position.x > -23.5f)))
         {
-            temp.x -= 0.03f; //if a is pressed and not too far to the left, moves and rotates the player
+            temp.x -= 0.015f; //if a is pressed and not too far to the left, moves and rotates the player
             rot.z = 30f;
-            mapPos -= 0.001f;
+            mapPos -= 0.0005f;
         }
 
         if ((Input.GetKey(KeyCode.D) && (transform.position.x < 23.5f)))
         {
-            temp.x += 0.03f; //same but for d and to the right
+            temp.x += 0.015f; //same but for d and to the right
             rot.z = -30f;
-            mapPos += 0.001f;
+            mapPos += 0.0005f;
         }
 
         if (!(Input.GetKey(KeyCode.A)) && !(Input.GetKey(KeyCode.D)))
